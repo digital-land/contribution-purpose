@@ -4,35 +4,23 @@
     <meta charset="utf-8">
     <title>Contribution-purpose | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c"> 
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    
       <link rel="manifest" href="/site.webmanifest">
       <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
       <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    
 
-    
-
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
-	<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
-    
-    
+    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-    
 
-    
       <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-    
 
-    
 <!-- Cookie banner partial version 1.0.1 -->
 <div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
@@ -60,18 +48,14 @@
     <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
   </div>
 
-</div>
-
-
-<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="header-proposition">
       <div class="govuk-header__content">
         <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
         Digital Land
         </a>
-        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-        <nav>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
           <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="/about">Team</a>
@@ -99,17 +83,12 @@
             </li>
           </ul>
         </nav>
-        </div>
+</div>
     </div>
   </div>
 </header>
 
-
-
-    
       <div class="govuk-width-container ">
-        
-  
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
   prototype
@@ -117,129 +96,225 @@
       This is a prototype. Please provide feedback to the Digital Land team.
     </span>
   </p>
-</div>
-  
-<div class="govuk-breadcrumbs ">
+</div><div class="govuk-breadcrumbs ">
   <ol class="govuk-breadcrumbs__list">
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item" aria-current="page">contribution-purpose</li>
-    
-  
   </ol>
-</div>
-        <main class="govuk-main-wrapper " id="main-content" role="main">
-          
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
 
 <h1 class="govuk-heading-xl">Contribution purpose</h1>
+            <div class="govuk-!-margin-bottom-9" style="margin-top: -15px;">
+                <a class="dl-page-action-button" href="https://raw.githubusercontent.com/digital-land/contribution-purpose/main/dataset/contribution-purpose.csv">Download dataset</a>
+            </div>
 
-<div class="govuk-!-margin-bottom-9" style="margin-top: -15px;">
-    <a class="dl-page-action-button" href="https://raw.githubusercontent.com/digital-land/permitted-development-right/main/dataset/contribution-purpose.csv">Download dataset</a>
-</div>
+    <form class="filter-organisations-list__form filter-organisations-list__form--active govuk-!-margin-bottom-9" data-filter="form">
+        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
+        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
+    </form>
+
+    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
+    <div class="index-list-wrapper">
+            <div class="count-wrapper">
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">22</span> records.</p>
+                <p class="govuk-visually-hidden">There are
+                    <span class="js-accessible-list-count">22</span>
+                    records listed.
+                </p>
+            </div>
+
+            <table class="dl-index-list" data-filter="list">
+  <tbody><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./affordable-housing" data-filter="match-content">affordable-housing</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Affordable housing</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./bonds" data-filter="match-content">bonds</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bonds</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./cil-administration-costs" data-filter="match-content">cil-administration-costs</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CIL administration costs</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./community-facilities" data-filter="match-content">community-facilities</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Community facilities</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./community-infrastructure-levy" data-filter="match-content">community-infrastructure-levy</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Community infrastructure levy</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./digital-infrastructure" data-filter="match-content">digital-infrastructure</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Digital infrastructure</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./economic-development" data-filter="match-content">economic-development</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Economic development</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./education" data-filter="match-content">education</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Education</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./flood" data-filter="match-content">flood</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Flood</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./flood-and-water-management" data-filter="match-content">flood-and-water-management</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Flood and water management</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./green-infrastructure" data-filter="match-content">green-infrastructure</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Green infrastructure</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./health" data-filter="match-content">health</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Health</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./highways" data-filter="match-content">highways</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Highways</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./land" data-filter="match-content">land</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./mayoral-community-infrastructure-levy" data-filter="match-content">mayoral-community-infrastructure-levy</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Mayoral Community Infrastructure Levy</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./monitoring-fees" data-filter="match-content">monitoring-fees</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Monitoring fees</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./neighbourhood-community-infrastructure-levy" data-filter="match-content">neighbourhood-community-infrastructure-levy</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Neighbourhood Community Infrastructure Levy</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./open-space" data-filter="match-content">open-space</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Open space</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./open-space-and-leisure" data-filter="match-content">open-space-and-leisure</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Open space and leisure</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./other" data-filter="match-content">other</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Other</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./transport" data-filter="match-content">transport</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Transport</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./transport-and-travel" data-filter="match-content">transport-and-travel</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Transport and travel</p>
+  </td>
+</tr></tbody>
+</table>
 
 
-
-<p class="govuk-body">Showing 22 records from 1 organisation.</p>
-
-
-<div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
-  
-  <div class="govuk-accordion__section ">
-    <div class="govuk-accordion__section-header" id="no-group">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-          None
-        </span>
-      </h2>
     </div>
-    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-      
-<div class="dl-index-grid"><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="affordable-housing">affordable-housing</a></h4>
-  <p class="dl-index-item__body govuk-body">Affordable housing</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="bonds">bonds</a></h4>
-  <p class="dl-index-item__body govuk-body">Bonds</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="cil-administration-costs">cil-administration-costs</a></h4>
-  <p class="dl-index-item__body govuk-body">CIL administration costs</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="community-facilities">community-facilities</a></h4>
-  <p class="dl-index-item__body govuk-body">Community facilities</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="community-infrastructure-levy">community-infrastructure-levy</a></h4>
-  <p class="dl-index-item__body govuk-body">Community infrastructure levy</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="digital-infrastructure">digital-infrastructure</a></h4>
-  <p class="dl-index-item__body govuk-body">Digital infrastructure</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="economic-development">economic-development</a></h4>
-  <p class="dl-index-item__body govuk-body">Economic development</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="education">education</a></h4>
-  <p class="dl-index-item__body govuk-body">Education</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="flood">flood</a></h4>
-  <p class="dl-index-item__body govuk-body">Flood</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="flood-and-water-management">flood-and-water-management</a></h4>
-  <p class="dl-index-item__body govuk-body">Flood and water management</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="green-infrastructure">green-infrastructure</a></h4>
-  <p class="dl-index-item__body govuk-body">Green infrastructure</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="health">health</a></h4>
-  <p class="dl-index-item__body govuk-body">Health</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="highways">highways</a></h4>
-  <p class="dl-index-item__body govuk-body">Highways</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="land">land</a></h4>
-  <p class="dl-index-item__body govuk-body">Land</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="mayoral-community-infrastructure-levy">mayoral-community-infrastructure-levy</a></h4>
-  <p class="dl-index-item__body govuk-body">Mayoral Community Infrastructure Levy</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="monitoring-fees">monitoring-fees</a></h4>
-  <p class="dl-index-item__body govuk-body">Monitoring fees</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="neighbourhood-community-infrastructure-levy">neighbourhood-community-infrastructure-levy</a></h4>
-  <p class="dl-index-item__body govuk-body">Neighbourhood Community Infrastructure Levy</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="open-space">open-space</a></h4>
-  <p class="dl-index-item__body govuk-body">Open space</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="open-space-and-leisure">open-space-and-leisure</a></h4>
-  <p class="dl-index-item__body govuk-body">Open space and leisure</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="other">other</a></h4>
-  <p class="dl-index-item__body govuk-body">Other</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="transport">transport</a></h4>
-  <p class="dl-index-item__body govuk-body">Transport</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="transport-and-travel">transport-and-travel</a></h4>
-  <p class="dl-index-item__body govuk-body">Transport and travel</p></div>
-
-    </div>
-  </div> 
-  
-</div>
-
 
         </main>
       </div>
-    
-
-    
-  
-
-
-
-
-
 
 
 <footer class="govuk-footer " role="contentinfo"
-        >
+>
   <div class="govuk-width-container ">
-    
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
-          <h2 class="govuk-visually-hidden">Support links</h2>
-              <ul class="govuk-footer__inline-list">
-                
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/cookies">
                       Cookies
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/accessibility-statement">
                       Accessibility statement
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/design-system">
                       Design system
                     </a>
                   </li>
-                
               </ul>
-            
-          
-          
             <div class="govuk-footer__meta-custom">
               The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
             </div>
-          
-        
         <svg
           role="presentation"
           focusable="false"
@@ -272,13 +347,9 @@
     </div>
   </div>
 </footer>
-
-
-    
-<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
-	
 
 	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
 	<script>
@@ -286,18 +357,23 @@
 		window.GOVUKFrontend.initAll();
 	</script>
 
-	
-	
 	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
 	<script>
 		// adds any necessary polyfills
 		window.DLFrontend.polyfill();
 	</script>
-	
 
 
 
 
+        <script>
+        // initialise list filter
+        const $form = document.querySelector('[data-filter="form"]');
+        new window.DLFrontend.FilterList($form).init({
+            list_section_selector: '.index-list-wrapper',
+            count_wrapper_selector: '.count-wrapper'
+        })
+        </script>
 
   </body>
 </html>
