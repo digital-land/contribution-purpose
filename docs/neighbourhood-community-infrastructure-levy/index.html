@@ -138,13 +138,13 @@
             </dt>
             <dd class="govuk-summary-list__value">                Neighbourhood Community Infrastructure Levy            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">contribution-purpose
-            </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">neighbourhood-community-infrastructure-levy</span>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2019-05-07            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">contribution-purpose
+            </dt>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">neighbourhood-community-infrastructure-levy</span>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -174,8 +174,8 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>contribution-purpose</th>
+            <th>name</th>
             <th>start-date</th>
         </tr>
     </thead>
@@ -183,8 +183,8 @@
             <td>2019-05-07</td>
             <td><a href="https://github.com/digital-land/contribution-purpose-collection/tree/main/transformed/contribution-purpose/50ce3623172e4c8b8a900426d17614f9e7010145cb140c7a699b9fdd11a9cdd5.csv#L18">50ce3623172e...</a></td>
             <td>17</td>
-                <td>Neighbourhood Community Infrastructure Levy</td> 
                 <td>neighbourhood-community-infrastructure-levy</td> 
+                <td>Neighbourhood Community Infrastructure Levy</td> 
                 <td>2019-05-07</td> 
         </tr>    </tbody>
 </table>
@@ -300,7 +300,7 @@
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map
