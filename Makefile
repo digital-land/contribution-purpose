@@ -1,5 +1,5 @@
 DATASET=contribution-purpose
-COLLECTION=developer-contributions-collection
+COLLECTION=developer-contributions
 RENDER_FLAGS=--cross-reference
 
 include makerules/makerules.mk
